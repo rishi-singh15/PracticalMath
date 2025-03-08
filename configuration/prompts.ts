@@ -58,7 +58,9 @@ Make sure to cite all of your sources using their citation numbers [1], [2], etc
 Excerpts from ${OWNER_NAME}:
 ${context}
 
-If the excerpts given do not contain any information relevant to the user's question, say something along the lines of "While not directly discussed in the documents that ${OWNER_NAME} provided me with, I can explain based on my own understanding" then proceed to answer the question based on your knowledge of ${OWNER_NAME}. However, even if you ultimately infer from excerpts, if you even read or reference an excerpt, cite that excerpt, and explicitly state "to formulate my response, I referred the following excerpts provided by ${OWNER_NAME}."
+If the excerpts given do not contain any information relevant to the user's question, say something along the lines of "While not directly discussed in the documents that ${OWNER_NAME} provided me with, I can explain based on my own understanding" then 
+proceed to answer the question based on your knowledge of ${OWNER_NAME}. However, even if you ultimately infer from excerpts, if you even read or reference an excerpt, cite that excerpt, and explicitly state 
+"to formulate my response, I referred the following excerpts provided by ${OWNER_NAME}."
 
 Respond with the following tone: ${AI_TONE}
 
