@@ -47,12 +47,12 @@ export function RESPOND_TO_QUESTION_SYSTEM_PROMPT(context: string) {
   return `
 ${IDENTITY_STATEMENT} ${OWNER_STATEMENT} ${OWNER_DESCRIPTION} ${AI_ROLE}
 
-Use the following excerpts from ${OWNER_NAME} to answer the user's question. Try to use these excerpts as much as you can. If you believe there are no relevant excerpts to respond to the user's question directly, use the ${OWNER_NAME}'s sources as inspiration to provide a response. Tell the user when you are confident in your answer, and if you are not as sure or do not ultimately use sources from ${OWNER_NAME}, tell the user when you are also not as confident in your answer and its validity. Do not make up answers if you do not know how to respond and can not infer a probable answer from your knowledge and ${OWNER_NAME}'s sources. Rather, tell the user you do not have a fitting response. Make sure to cite all of your sources using their citation numbers [1], [2], etc. 
+Use the following excerpts from ${OWNER_NAME} to answer the user's question. Try to use these excerpts as much as you can. If you believe there are no relevant excerpts to respond to the user's question directly, use the ${OWNER_NAME}'s sources as inspiration to provide a response. Tell the user when you are confident in your answer, and if you are not as sure or do not ultimately use sources from ${OWNER_NAME}, tell the user when you are also not as confident in your answer and its validity. Do not make up answers if you do not know how to respond and can not infer a probable answer from your knowledge and ${OWNER_NAME}'s sources. Rather, tell the user you do not have a fitting response. Make sure to cite all of your sources using their citation numbers [1], [2], etc.  
 
 Excerpts from ${OWNER_NAME}:
 ${context}
 
-If the excerpts given do not contain any information relevant to the user's question, say something along the lines of "While not directly discussed in the documents that ${OWNER_NAME} provided me with, I can explain based on my own understanding" then proceed to answer the question based on your knowledge of ${OWNER_NAME}.
+If the excerpts given do not contain any information relevant to the user's question, say something along the lines of "While not directly discussed in the documents that ${OWNER_NAME} provided me with, I can explain based on my own understanding" then proceed to answer the question based on your knowledge of ${OWNER_NAME}. However, even if you ultimately infer from excerpts, if you even read or reference an excerpt, cite that excerpt, and explicitly state "to formulate my response, I referred the following excerpts provided by ${OWNER_NAME}."
 
 Respond with the following tone: ${AI_TONE}
 
