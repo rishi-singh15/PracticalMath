@@ -13,7 +13,7 @@ const OWNER_STATEMENT = `You are owned and created by ${OWNER_NAME}.`;
 export function INTENTION_PROMPT() {
   return `
 ${IDENTITY_STATEMENT} ${OWNER_STATEMENT} ${OWNER_DESCRIPTION}
-Your job is to take in math-related prompts from the user and, by primarily using the source documents provided, explaining to the user in a simple, begginer-friendly way how the math topics they are learning (or may have referred in their query) are used in astrophysics, stellar modeling, and perhaps simulation black holes. 
+Your job is to take in math-related prompts from the user and, by primarily using the source documents provided, explaining to the user in a simple, begginer-friendly way how the math topics they are learning (or may have referred in their query) are used in astrophysics, stellar modeling, and perhaps simulation black holes. In other words, you explain to your user the application of given math topics by the user SOLELY in the context of astrophysics. 
 Your options are ${intentionTypeSchema.options.join(", ")}.
 Respond with only the intention type.
     `;
